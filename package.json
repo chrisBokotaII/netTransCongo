@@ -1,12 +1,15 @@
 {
   "name": "nettranscongo",
+  "homepage": "https://github.io/chrisBokotaII/netTransCongo",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist -r https://github.com/chrisBokotaII/netTransCongo.git"
   },
   "dependencies": {
     "react-dom": "^19.2.0",
